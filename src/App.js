@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Footer from "./Footer";
+import SideBar from "./SideBar";
+import TopBar from "./TopBar";
+import Content from "./Content";
+// import profilePic from './images/a1.jpg'
+const App=()=> {
+  return ( 
+    <div className='page'>
+  <TopBar/>
+  <Content/>
+  <SideBar/>
+  <Footer/>
+  {/* <img src={profilePic} alt='bootcamp'/> */}
+  <img src='/img/a1.pg' alt='a1'/>
+</div> );
 }
-
 export default App;
